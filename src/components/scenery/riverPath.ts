@@ -1,4 +1,5 @@
 import * as THREE from "three";
+import { MathUtils } from "three";
 
 // Narmada River flowing broadly through the valley with Sadhu Bet island in the middle
 const WAYPOINTS: [number, number, number][] = [
@@ -27,8 +28,8 @@ const BASE_RIVER_WIDTH = 236.0;
 
 export function getRiverWidth(t = 0): number {
   if (t > 0.45) {
-    const damSpread = THREE.MathUtils.smoothstep(t, 0.45, 0.92);
-    return THREE.MathUtils.lerp(BASE_RIVER_WIDTH, 280.0, damSpread);
+    const damSpread = MathUtils.smoothstep(t, 0.45, 0.92);
+    return MathUtils.lerp(BASE_RIVER_WIDTH, 280.0, damSpread);
   }
   return BASE_RIVER_WIDTH;
 }
@@ -191,8 +192,8 @@ export function getScenicRoadX(z: number): number {
   // Near the Mainland Visitor Port (Z between -65 and +65), smoothly wrap behind the plaza
   // to align and connect with the visitor parking lot entrance (x ~ 138)
   if (Math.abs(z) < 65) {
-    const portBlend = 1 - THREE.MathUtils.smoothstep(Math.abs(z), 0, 65);
-    roadX = THREE.MathUtils.lerp(roadX, 138.0, portBlend * 0.96);
+    const portBlend = 1 - MathUtils.smoothstep(Math.abs(z), 0, 65);
+    roadX = MathUtils.lerp(roadX, 138.0, portBlend * 0.96);
   }
 
   return roadX;
