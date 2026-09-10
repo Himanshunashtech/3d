@@ -1,0 +1,6 @@
+# Robots.txt for Statue of Unity 3D Interactive Experience
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://statueofunity3d.com/sitemap.xml

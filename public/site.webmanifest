@@ -1,0 +1,19 @@
+{
+  "name": "Statue of Unity 3D — Interactive Monument & Valley",
+  "short_name": "Statue of Unity 3D",
+  "description": "Explore an interactive 3D scene of the Statue of Unity with Sadhu Bet island, approach bridge, and lush mountain river valley.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#18426d",
+  "theme_color": "#1e4b7a",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "travel", "entertainment"]
+}

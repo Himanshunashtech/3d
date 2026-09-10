@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e5799" />
+      <stop offset="50%" stop-color="#2989d8" />
+      <stop offset="85%" stop-color="#7db9e8" />
+      <stop offset="100%" stop-color="#d4e8f8" />
+    </linearGradient>
+    <radialGradient id="sunGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" stop-color="#fff8db" stop-opacity="1" />
+      <stop offset="40%" stop-color="#ffd54f" stop-opacity="0.85" />
+      <stop offset="100%" stop-color="#ffb300" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0288d1" />
+      <stop offset="100%" stop-color="#01579b" />
+    </linearGradient>
+    <linearGradient id="statueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4e342e" />
+      <stop offset="50%" stop-color="#6d4c41" />
+      <stop offset="100%" stop-color="#3e2723" />
+    </linearGradient>
+    <linearGradient id="pedestalGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d84315" />
+      <stop offset="100%" stop-color="#bf360c" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background rounded frame -->
+  <rect width="128" height="128" rx="28" fill="url(#skyGrad)" />
+  
+  <!-- Sun Glow -->
+  <circle cx="64" cy="50" r="38" fill="url(#sunGlow)" />
+  
+  <!-- Distant mountain ridges -->
+  <path d="M 0 94 Q 28 72 58 84 T 128 78 L 128 128 L 0 128 Z" fill="#33691e" opacity="0.6" />
+  <path d="M 0 102 Q 38 88 78 96 T 128 92 L 128 128 L 0 128 Z" fill="#558b2f" opacity="0.75" />
+
+  <!-- River water ribbon -->
+  <path d="M 0 108 Q 40 98 64 116 T 128 114 L 128 128 L 0 128 Z" fill="url(#riverGrad)" />
+
+  <!-- Pedestal -->
+  <polygon points="52,106 76,106 72,92 56,92" fill="url(#pedestalGrad)" />
+  <rect x="54" y="90" width="20" height="3" rx="1.5" fill="#ffd54f" />
+
+  <!-- Statue of Sardar Patel Silhouette -->
+  <!-- Head & Shawl/Torso -->
+  <circle cx="64" cy="34" r="5.5" fill="url(#statueGrad)" />
+  <!-- Shoulders & Coat -->
+  <path d="M 54 44 C 54 40 58 38 64 38 C 70 38 74 40 74 44 L 73 68 C 73 70 71 71 69 71 L 59 71 C 57 71 55 70 55 68 Z" fill="url(#statueGrad)" />
+  <!-- Draped Shawl line -->
+  <path d="M 55 46 Q 64 56 73 50" stroke="#8d6e63" stroke-width="1.8" fill="none" stroke-linecap="round" />
+  <!-- Dhoti / Legs -->
+  <path d="M 56 71 L 57 90 L 62.5 90 L 62.5 73 L 65.5 73 L 65.5 90 L 71 90 L 72 71 Z" fill="url(#statueGrad)" />
+  <!-- Feet -->
+  <rect x="56" y="89" width="6.5" height="2" rx="1" fill="#3e2723" />
+  <rect x="65.5" y="89" width="6.5" height="2" rx="1" fill="#3e2723" />
+
+  <!-- Border highlight ring -->
+  <rect x="1.5" y="1.5" width="125" height="125" rx="26.5" fill="none" stroke="rgba(255,255,255,0.4)" stroke-width="2" />
+</svg>
