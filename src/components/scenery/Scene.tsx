@@ -201,7 +201,7 @@ export function Scene() {
       <Trees />
       {!isNight && <Birds />}
       <Visitors />
-      <StatueOfUnityBase modelUrl="/Screenshot 2026-09-09 213731.glb" />
+      <StatueOfUnityBase modelUrl="/statue.glb" />
       <MainlandRoadAndParking isNight={isNight} isLightShow={isLightShow} />
       <SecondBridge isNight={isNight} isLightShow={isLightShow} />
       <MetalRiverBridge isNight={isNight} isLightShow={isLightShow} />

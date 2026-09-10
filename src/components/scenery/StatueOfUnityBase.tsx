@@ -24,10 +24,10 @@ import { MainlandVisitorPort } from "./MainlandVisitorPort";
  * 8. Rocky Sadhu Bet island foundation surrounded by the Narmada River
  */
 // Preload Statue 3D Asset in parallel immediately at page initialization
-useGLTF.preload("/Screenshot 2026-09-09 213731.glb");
+useGLTF.preload("/statue.glb");
 
 export function StatueOfUnityBase({
-  modelUrl = "/Screenshot 2026-09-09 213731.glb",
+  modelUrl = "/statue.glb",
 }: {
   modelUrl?: string;
 }) {
